@@ -23,3 +23,16 @@
 hs_err_pid*
 /target/
 /bin/
+
+# I added
+*/target/**
+*.classpath
+*/.settings/*
+*.project
+
+
+
+
+
+
+
