@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>com.saurabh</groupId>
 	<artifactId>saurabhs-pet-clinic</artifactId>
-	<version>0.0.3</version>
+	<version>0.0.4-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>saurabhs-pet-clinic</name>
 	<description>My own implementation of Springs' reference Pet Clinic Project. </description>
@@ -45,6 +45,6 @@
 	</build>
 	<scm>
 		<developerConnection>scm:git:https://github.com/patil-saurabh/saurabhs-pet-clinic.git</developerConnection>
-	  <tag>saurabhs-pet-clinic-0.0.3</tag>
+	  <tag>HEAD</tag>
   </scm>
 </project>
