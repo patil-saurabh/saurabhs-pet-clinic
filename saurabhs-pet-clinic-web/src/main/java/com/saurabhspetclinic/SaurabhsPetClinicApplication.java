@@ -1,4 +1,4 @@
-package com.saurabh.saurabhspetclinic;
+package com.saurabhspetclinic;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

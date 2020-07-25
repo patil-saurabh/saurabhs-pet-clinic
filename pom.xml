@@ -7,9 +7,10 @@
 		<version>2.3.0.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
+	
 	<groupId>com.saurabh</groupId>
 	<artifactId>saurabhs-pet-clinic</artifactId>
-	<version>0.0.4-SNAPSHOT</version>
+	<version>0.0.5-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>saurabhs-pet-clinic</name>
 	<description>My own implementation of Springs' reference Pet Clinic Project. </description>
@@ -22,14 +23,33 @@
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
-
-	<!-- All dependencies moved to modules, no dependencies needed here. -->
+	
+	<!-- All dependencies moved to modules, no dependencies needed here. Still need some basic ones for the base Application class. -->
 	<dependencies>
+		<dependency>
+    		<groupId>org.springframework.boot</groupId>
+    		<artifactId>spring-boot</artifactId>
+		</dependency>
+		<dependency>
+    		<groupId>org.springframework.boot</groupId>
+    		<artifactId>spring-boot-autoconfigure</artifactId>
+		</dependency>
+		<dependency>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-test</artifactId>
+		    <scope>test</scope>
+		</dependency>
+
+		<!-- Note: 
+		When you want your application to be deployable into external server as well, and not only run by embedded Tomcat server, you need  
+		implementation of ServletInitializer. For that you need spring-web jar for resolving dependencies of class ServletInitializer. 
+		I wanted to do it, but found a long chain of dependencies I had to include, so skipping it for now.  -->
+
 	</dependencies>
 
 	<build>
 		<plugins>
-			<plugin>
+			<plugin>		
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
@@ -45,6 +65,6 @@
 	</build>
 	<scm>
 		<developerConnection>scm:git:https://github.com/patil-saurabh/saurabhs-pet-clinic.git</developerConnection>
-	  <tag>HEAD</tag>
+	  	<tag>HEAD</tag>
   </scm>
 </project>
